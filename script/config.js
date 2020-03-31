@@ -1,0 +1,1 @@
+"use strict";require.config({baseUrl:"https://cdn.bootcss.com/",paths:{jquery:"jquery/1.11.3/jquery.min","jquery-mousewheel":"jquery-mousewheel/3.1.13/jquery.mousewheel",jquery_lazyload:"jquery_lazyload/1.9.7/jquery.lazyload.min"}});

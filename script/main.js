@@ -1,0 +1,1 @@
+"use strict";require(["jquery"],function(){var r=$("#curr").attr("targetpage");r&&require([r],function(r){r.init()})});
