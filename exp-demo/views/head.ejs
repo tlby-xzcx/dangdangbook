@@ -1,0 +1,19 @@
+<div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <a class="navbar-brand hidden-sm" href="/">电影管理系统</a>
+        </div>
+        <div class="navbar-collapse collapse" role="navigation">
+            <ul class="nav navbar-nav">
+                <li class="<%- title=='home'?'active':''%>"><a href="/home">主页</a></li>
+                <li class="<%- title=='login'?'active':''%>"><a href="/login">登录</a></li>
+                <li class="<%- title=='register'?'active':''%>"><a href="/register">注册</a></li>
+                <li class="<%- title=='movie'?'active':''%>"><a href="/movie">电影</a></li>
+                <li class="<%- title=='chatroom'?'active':''%>"><a href="/chatroom">聊天室</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right hidden-sm">
+                <li class="<%- title=='my'?'active':'' %>"><a href="/my">关于</a></li>
+            </ul>
+        </div>
+    </div>
+</div>

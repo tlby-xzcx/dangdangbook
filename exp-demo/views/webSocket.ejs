@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>聊天室</title>
+    <%- include common %>
+    <style>
+        body {
+            padding-top: 70px;
+        }
+
+        #chatroom {
+            width: 300px;
+            height: 400px;
+            border: 2px solid pink;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            overflow: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <%- include('head',{title:'chatroom'})%>
+    <h2>花花聊天室</h2>
+    <div id="chatroom">
+
+    </div>
+    <div>
+        <input type="text" id="content" placeholder="请输入聊天内容">
+        <button id="sendbtn">send</button>
+    </div>
+    <script>
+        const ws = new WebSocket('ws://localhost:3900');
+        ws.onopen = function () {
+            ws.send(`大家好`);
+        }
+        function sendmsg() {
+            ws.send(content.value);
+            content.value = '';
+        }
+        sendbtn.onclick = sendmsg;
+        document.onkeydown = function (event) {
+            if (event.keyCode == 13) {
+                sendmsg();
+            }
+        }
+        ws.onmessage = function (data) {
+            console.log(data);
+            chatroom.innerHTML += `<p>${data.data}</p>`;
+        }
+        ws.onclose = function () {
+            console.log('服务器已经关闭');
+        }
+        ws.onerror = function (err) {
+            console.log('服务器出现异常' + err);
+        }
+    </script>
+</body>
+
+</html>

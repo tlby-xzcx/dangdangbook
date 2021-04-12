@@ -1,0 +1,602 @@
+[
+    {
+        "_id": "5f0806d51f4e4e3328001b04",
+        "name": "习近平谈治国理政（第三卷）（中文平装）",
+        "img": "http://img3m7.ddimg.cn/56/32/28978247-1_l_4.jpg",
+        "price": 64.0,
+        "author": "习近平",
+        "rate": 5.0,
+        "type": {
+            "value": "xs",
+            "text": "新书上架"
+        }
+    },
+    {
+        "_id": "5f08073a1f4e4e3328001b05",
+        "name": "给孩子的思维导图课：受益一生的阅读力训练",
+        "img": "http://img3m5.ddimg.cn/37/31/28972585-1_l_6.jpg",
+        "price": 34.0,
+        "author": "王玉印 杨泽",
+        "rate": 4.0,
+        "type": {
+            "value": "xs",
+            "text": "新书上架"
+        }
+    },
+    {
+        "_id": "5f0807611f4e4e3328001b06",
+        "name": "东野圭吾：祈念守护人（东野圭吾2020年全新长篇，全球同步发售）",
+        "img": "http://img3m6.ddimg.cn/33/8/28549356-1_l_15.jpg",
+        "price": 59.0,
+        "rate": 3.5,
+        "author": "（日）东野圭吾  著 ， 新经典  出品",
+        "type": {
+            "value": "xs",
+            "text": "新书上架"
+        }
+    },
+    {
+        "_id": "5f0807831f4e4e3328001b07",
+        "name": "成为最好的自己：女人的一生，有多少种可能？",
+        "img": "http://img3m1.ddimg.cn/40/14/28970311-1_l_3.jpg",
+        "price": 43.0,
+        "rate": 4.5,
+        "author": "奕丹",
+        "type": {
+            "value": "xs",
+            "text": "新书上架"
+        }
+    },
+    {
+        "_id": "5f0807ac1f4e4e3328001b08",
+        "name": "人间失格（精装典藏版，雄踞当当榜单前列两年之久的畅销书《人间失格",
+        "img": "http://img3m5.ddimg.cn/8/9/28974635-1_l_2.jpg",
+        "author": "〔日〕太宰治 著 杨伟 译",
+        "price": 35.0,
+        "rate": 3.0,
+        "type": {
+            "value": "xs",
+            "text": "新书上架"
+        }
+    },
+    {
+        "_id": "5f0807c91f4e4e3328001b09",
+        "name": "故宫的秘密",
+        "img": "http://img3m7.ddimg.cn/10/12/28978597-1_l_3.jpg",
+        "author": "萌伢童书",
+        "price": 141.0,
+        "rate": 4.0,
+        "type": {
+            "value": "xs",
+            "text": "新书上架"
+        }
+    },
+    {
+        "_id": "5f0807f21f4e4e3328001b0a",
+        "name": "2-4岁幼儿脑力激发绘本（全3册）（精）",
+        "img": "http://img3m8.ddimg.cn/75/14/28553358-1_l_8.jpg",
+        "author": "爱丽丝.布歇尔-阿凯，海豚传媒出品",
+        "price": 101.0,
+        "rate": 4.0,
+        "type": {
+            "value": "xs",
+            "text": "新书上架"
+        }
+    },
+    {
+        "_id": "5f08080f1f4e4e3328001b0b",
+        "name": "超级生物",
+        "img": "http://img3m4.ddimg.cn/63/14/1901221704-1_l_1.jpg",
+        "author": "金子息",
+        "price": 16.0,
+        "rate": 4.5,
+        "type": {
+            "value": "xs",
+            "text": "新书上架"
+        }
+    },
+    {
+        "_id": "5f08081d1f4e4e3328001b0c",
+        "img": "http://img3m8.ddimg.cn/97/7/28973338-1_l_3.jpg",
+        "author": "淮上",
+        "name": "破云.2（作者新增番外《建宁男团出道记（上）》,随书附赠严峫江停登",
+        "price": 45.0,
+        "rate": 3.0,
+        "type": {
+            "value": "xs",
+            "text": "新书上架"
+        }
+    },
+    {
+        "_id": "5f08084a1f4e4e3328001b0d",
+        "img": "http://img3m2.ddimg.cn/93/12/28554762-1_l_2.jpg",
+        "author": "李杰",
+        "name": "复利信徒：一个职业投资人的思考札记",
+        "price": 84.0,
+        "rate": 3.5,
+        "type": {
+            "value": "xs",
+            "text": "新书上架"
+        }
+    },
+    {
+        "_id": "5f0808671f4e4e3328001b0e",
+        "img": "http://img3m9.ddimg.cn/40/27/28970509-1_l_6.jpg",
+        "author": "李尚龙",
+        "price": 41.0,
+        "name": "我们总是孤独成长",
+        "rate": 5.0,
+        "type": {
+            "value": "wx",
+            "text": "文学"
+        }
+    },
+    {
+        "_id": "5f0808831f4e4e3328001b0f",
+        "name": "黏土盒子",
+        "img": "http://img3m4.ddimg.cn/18/13/28558944-1_l_8.jpg",
+        "price": 160.0,
+        "rate": 3.0,
+        "author": "暮珥",
+        "type": {
+            "value": "wx",
+            "text": "文学"
+        }
+    },
+    {
+        "_id": "5f0808bc1f4e4e3328001b10",
+        "img": "http://img3m0.ddimg.cn/14/22/28976720-1_l_3.jpg",
+        "name": "美国监狱（美国权力和资本的游戏，现实版《越狱》，一本书看透美国监",
+        "author": "[美]肖恩·鲍尔 著 郭红 译  时代华语 出品",
+        "price": 41.0,
+        "rate": 3.5,
+        "type": {
+            "value": "wx",
+            "text": "文学"
+        }
+    },
+    {
+        "_id": "5f0808cd1f4e4e3328001b11",
+        "name": "人体立体书：解剖探索身体运转奥秘（我们的身体高阶版，更适合中小学",
+        "author": "[英] 理查德·沃克 文,[美] 雷切尔·考德威尔 图,文静 译",
+        "img": "http://img3m4.ddimg.cn/10/29/28968994-1_l_14.jpg",
+        "price": 126.0,
+        "rate": 4.0,
+        "type": {
+            "value": "wx",
+            "text": "文学"
+        }
+    },
+    {
+        "_id": "5f0809051f4e4e3328001b12",
+        "img": "http://img3m5.ddimg.cn/88/36/28545055-1_l_8.jpg",
+        "name": "培生幼儿英语·灯塔 预备级（全26册）",
+        "author": "英国培生教育出版集团（Pearson Education Limited）著；小博集 出品",
+        "price": 81.0,
+        "rate": 3.5,
+        "type": {
+            "value": "wx",
+            "text": "文学"
+        }
+    },
+    {
+        "_id": "5f0809221f4e4e3328001b13",
+        "img": "http://img3m0.ddimg.cn/69/20/1901221710-1_l_1.jpg",
+        "name": "做人：王阳明心学的真正传习",
+        "author": "费勇",
+        "price": 38.0,
+        "rate": 3.0,
+        "type": {
+            "value": "wx",
+            "text": "文学"
+        }
+    },
+    {
+        "_id": "5f08093d1f4e4e3328001b14",
+        "img": "http://img3m4.ddimg.cn/55/26/28540864-1_l_7.jpg",
+        "author": "季羡林",
+        "name": "季羡林：人间岁月长",
+        "price": 38.0,
+        "rate": 3.0,
+        "type": {
+            "value": "wx",
+            "text": "文学"
+        }
+    },
+    {
+        "_id": "5f08095c1f4e4e3328001b15",
+        "img": "http://img3m7.ddimg.cn/39/6/28975557-1_l_2.jpg",
+        "author": "【日】斋藤孝著，王多佳译",
+        "price": 31.0,
+        "rate": 3.5,
+        "name": "写给小学生的论语 中小学必读阅读书目 国学启蒙·国学经典·儒家经典",
+        "type": {
+            "value": "wx",
+            "text": "文学"
+        }
+    },
+    {
+        "_id": "5f0809891f4e4e3328001b16",
+        "img": "http://img3m3.ddimg.cn/47/9/28977743-1_l_9.jpg",
+        "author": "[美]米歇尔·斯凯恩(Michelle Skeen) 著，开森心理 出品",
+        "price": 24.0,
+        "rate": 4.0,
+        "name": "嘿，反常的我：为什么在亲密关系中，我变成了另一个人?",
+        "type": {
+            "value": "lz",
+            "text": "励志"
+        }
+    },
+    {
+        "_id": "5f0809a71f4e4e3328001b17",
+        "img": "http://img3m3.ddimg.cn/74/15/28971533-1_l_3.jpg",
+        "author": "李先亮 著 时代华语 出品",
+        "name": "免疫力是第一生命力",
+        "price": 45.0,
+        "rate": 4.0,
+        "type": {
+            "value": "lz",
+            "text": "励志"
+        }
+    },
+    {
+        "_id": "5f0809cd1f4e4e3328001b18",
+        "img": "http://img3m2.ddimg.cn/93/9/28542882-1_l_3.jpg",
+        "author": "[美]兰道尔·门罗 著，Ent 译，未读 出品，",
+        "name": "【独家首发】How to：如何不切实际地解决实际问题（精装）（What if?",
+        "price": 68.0,
+        "rate": 4.5,
+        "type": {
+            "value": "lz",
+            "text": "励志"
+        }
+    },
+    {
+        "_id": "5f0809ed1f4e4e3328001b19",
+        "img": "http://img3m1.ddimg.cn/29/12/28555391-1_l_13.jpg",
+        "author": "[西班牙] 沙达德·卡伊德-萨拉赫·费隆 著,[西班牙] 爱德华·阿尔塔里巴绘,陈灼 陶毅 朱灿译",
+        "price": 175.0,
+        "rate": 4.5,
+        "name": "你好，未来！我的第一套科学启蒙系列（精装全3册）包含：《我的第一",
+        "type": {
+            "value": "lz",
+            "text": "励志"
+        }
+    },
+    {
+        "_id": "5f080a0d1f4e4e3328001b1a",
+        "img": "http://img3m5.ddimg.cn/36/8/28544805-1_l_6.jpg",
+        "name": "汉字故事绘本（全12册，让孩子在读绘本、做游戏、查图典、听音频中，",
+        "author": "中国教育科学研究院学前教育研究中心编，冰波、白燕等/文，高晴等/图",
+        "price": 255.0,
+        "rate": 5.0,
+        "type": {
+            "value": "lz",
+            "text": "励志"
+        }
+    },
+    {
+        "_id": "5f080a2c1f4e4e3328001b1b",
+        "img": "http://img3m6.ddimg.cn/6/10/1901222736-1_l_1.jpg",
+        "author": "林奇,何天峰",
+        "price": 44.0,
+        "rate": 3.5,
+        "name": "一本书看透价值投资",
+        "type": {
+            "value": "lz",
+            "text": "励志"
+        }
+    },
+    {
+        "_id": "5f080a481f4e4e3328001b1c",
+        "img": "http://img3m6.ddimg.cn/23/28/28558256-1_l_12.jpg",
+        "author": "北溟鱼，果麦文化 出品",
+        "name": "长安客",
+        "price": 41.0,
+        "rate": 3.0,
+        "type": {
+            "value": "lz",
+            "text": "励志"
+        }
+    },
+    {
+        "_id": "5f080a601f4e4e3328001b1d",
+        "img": "http://img3m8.ddimg.cn/82/6/28973818-1_l_6.jpg",
+        "author": "晓雪  白马时光出品",
+        "price": 38.0,
+        "rate": 3.5,
+        "name": "优雅是种力量",
+        "type": {
+            "value": "lz",
+            "text": "励志"
+        }
+    },
+    {
+        "_id": "5f080a7a1f4e4e3328001b1e",
+        "author": "朱仲玉",
+        "price": 66.0,
+        "rate": 4.0,
+        "img": "http://img3m0.ddimg.cn/77/7/28554350-1_l_5.jpg",
+        "name": "江南日暮：南唐三十九年",
+        "type": {
+            "value": "lz",
+            "text": "励志"
+        }
+    },
+    {
+        "_id": "5f080a8e1f4e4e3328001b1f",
+        "name": "掌控谈判：赢得高难度谈判的七大关键",
+        "img": "http://img3m3.ddimg.cn/89/14/28963133-1_l_3.jpg",
+        "author": "(日)藤井一郎，斯坦威 出品",
+        "price": 43.0,
+        "rate": 4.0,
+        "type": {
+            "value": "xs",
+            "text": "新书上架"
+        }
+    },
+    {
+        "_id": "5f080aaa1f4e4e3328001b20",
+        "author": "日本公文出版 编著 刘晓冉、康莉等 译 书中缘 出品",
+        "price": 141.0,
+        "rate": 4.0,
+        "img": "http://img3m3.ddimg.cn/11/36/28978103-1_l_9.jpg",
+        "name": "公文式教育：全脑阶梯游戏2-4岁（套装共6册）当当定制版",
+        "type": {
+            "value": "xs",
+            "text": "新书上架"
+        }
+    },
+    {
+        "_id": "5f080ac61f4e4e3328001b21",
+        "img": "http://img3m8.ddimg.cn/45/33/28527588-1_l_8.jpg",
+        "author": "［日］新井洋行 绘，周龙梅 译",
+        "price": 82.0,
+        "rate": 4.5,
+        "name": "和宝宝一起玩:0～3岁感官互动绘本",
+        "type": {
+            "value": "xs",
+            "text": "新书上架"
+        }
+    },
+    {
+        "_id": "5f080adf1f4e4e3328001b22",
+        "img": "http://img3m0.ddimg.cn/5/2/28980770-1_l_3.jpg",
+        "author": "［西］米雷娅·特鲁斯 著，［西］奥斯卡·朱尔夫 绘，王丽雅 译",
+        "name": "有趣的测量（万物有数学，创造性数学思维之旅，从敏感期就培养的数学",
+        "price": 79.0,
+        "rate": 3.0,
+        "type": {
+            "value": "xs",
+            "text": "新书上架"
+        }
+    },
+    {
+        "_id": "5f080b011f4e4e3328001b23",
+        "img": "http://img3m3.ddimg.cn/15/23/1901223933-1_l_1.jpg",
+        "name": "局中人(全2册)(张一山，潘粤明2020年主演同名影视剧原著)",
+        "price": 16.0,
+        "author": "刘誉",
+        "rate": 4.0,
+        "type": {
+            "value": "store",
+            "text": "小说"
+        }
+    },
+    {
+        "_id": "5f0868091f4e4e05a0004002",
+        "img": "http://product.dangdang.com/28976441.html",
+        "name": "顿悟的时刻",
+        "price": 41.0,
+        "author": "华帅帅",
+        "rate": 4.5,
+        "type": {
+            "value": "zd",
+            "text": "主打"
+        }
+    },
+    {
+        "_id": "5f0868891f4e4e05a0004003",
+        "img": "http://img3m5.ddimg.cn/51/34/26921715-1_l_2.jpg",
+        "name": "人生海海",
+        "price": 55.0,
+        "rate": 4.0,
+        "author": "麦家  著 ，新经",
+        "type": {
+            "value": "zd",
+            "text": "主打"
+        }
+    },
+    {
+        "_id": "5f0868d91f4e4e05a0004005",
+        "name": "六极物理",
+        "author": "严伯钧",
+        "img": "http://product.dangdang.com/28534343.html",
+        "price": 42.0,
+        "rate": 4.5,
+        "type": {
+            "value": "zd",
+            "text": "主打"
+        }
+    },
+    {
+        "_id": "5f0869051f4e4e05a0004006",
+        "img": "http://img3m2.ddimg.cn/65/6/27931232-1_l_6.jpg",
+        "price": 199.0,
+        "rate": 4.5,
+        "author": "陈磊·半小时漫画",
+        "name": "半小时漫画中国史1",
+        "type": {
+            "value": "zd",
+            "text": "主打"
+        }
+    },
+    {
+        "_id": "5f0869231f4e4e05a0004007",
+        "img": "http://img3m1.ddimg.cn/35/10/28553021-1_l_3.jpg",
+        "author": "文通天下",
+        "price": 40.0,
+        "rate": 4.0,
+        "name": "爱是自己浪漫一生的",
+        "type": {
+            "value": "zd",
+            "text": "主打"
+        }
+    },
+    {
+        "_id": "5f0869401f4e4e05a0004008",
+        "img": "http://img3m0.ddimg.cn/24/33/28541130-1_l_3.jpg",
+        "price": 36.0,
+        "author": "（法）马汀·坎普",
+        "rate": 3.0,
+        "name": "达芬奇",
+        "type": {
+            "value": "zd",
+            "text": "主打"
+        }
+    },
+    {
+        "_id": "5f0869601f4e4e05a0004009",
+        "img": "http://img3m5.ddimg.cn/17/12/28536965-1_l_4.jpg",
+        "name": "一生的旅程：迪士尼",
+        "price": 86.0,
+        "author": "(美)艾格 著;读客",
+        "rate": 4.0,
+        "type": {
+            "value": "zd",
+            "text": "主打"
+        }
+    },
+    {
+        "_id": "5f08697d1f4e4e05a000400a",
+        "img": "http://img3m0.ddimg.cn/95/20/28549220-1_l_6.jpg",
+        "author": "大J 姜喆 等 著",
+        "name": "爱上阅读的秘密2：",
+        "price": 199.0,
+        "rate": 3.5,
+        "type": {
+            "value": "zd",
+            "text": "主打"
+        }
+    },
+    {
+        "_id": "5f0869981f4e4e05a000400b",
+        "img": "http://img3m5.ddimg.cn/98/24/27871865-1_l_30.jpg",
+        "name": "笑背古诗：漫画版",
+        "author": "刘义良 著，夏和 ",
+        "price": 105.0,
+        "rate": 4.0,
+        "type": {
+            "value": "zd",
+            "text": "主打"
+        }
+    },
+    {
+        "_id": "5f0869b21f4e4e05a000400c",
+        "img": "http://img3m2.ddimg.cn/6/33/28539132-1_l_3.jpg",
+        "name": "画给孩子的中国神",
+        "price": 128.0,
+        "rate": 3.5,
+        "author": "张卓明 著，段张",
+        "type": {
+            "value": "zd",
+            "text": "主打"
+        }
+    },
+    {
+        "_id": "5f0869e71f4e4e05a000400d",
+        "img": "http://img3m3.ddimg.cn/63/16/27909153-1_l_6.jpg",
+        "name": "汉声数学图画书",
+        "author": "[美]明德尔·西托",
+        "price": 922.0,
+        "rate": 5.0,
+        "type": {
+            "value": "store",
+            "text": "小说"
+        }
+    },
+    {
+        "_id": "5f086a0f1f4e4e05a000400e",
+        "img": "http://img3m7.ddimg.cn/6/2/28544577-1_l_7.jpg",
+        "author": "〔阿根廷〕阿里埃",
+        "name": "灯塔+灯船+登月",
+        "price": 156.0,
+        "rate": 4.5,
+        "type": {
+            "value": "store",
+            "text": "小说"
+        }
+    },
+    {
+        "_id": "5f086a571f4e4e05a000400f",
+        "name": "曹文轩必读经典·画",
+        "author": "曹文轩",
+        "price": 356.0,
+        "rate": 4.0,
+        "img": "http://img3m2.ddimg.cn/93/27/28540902-1_l_5.jpg",
+        "type": {
+            "value": "store",
+            "text": "小说"
+        }
+    },
+    {
+        "_id": "5f086a741f4e4e05a0004010",
+        "img": "http://img3m9.ddimg.cn/8/34/28480229-1_l_13.jpg",
+        "name": "数学帮帮忙",
+        "price": 456.0,
+        "rate": 4.5,
+        "author": "（美）达芙妮·斯",
+        "type": {
+            "value": "store",
+            "text": "小说"
+        }
+    },
+    {
+        "_id": "5f086a941f4e4e05a0004011",
+        "name": "宝宝视觉激发",
+        "img": "http://img3m2.ddimg.cn/39/15/28553322-1_l_4.jpg",
+        "author": "步步联盟 [意]拉",
+        "price": 146.0,
+        "rate": 3.5,
+        "type": {
+            "value": "store",
+            "text": "小说"
+        }
+    },
+    {
+        "_id": "5f086aad1f4e4e05a0004012",
+        "img": "http://img3m8.ddimg.cn/47/10/28523828-1_l_31.jpg",
+        "name": "瑞典绘本女王睡前故",
+        "author": "[瑞典] 艾莎·贝",
+        "price": 136.0,
+        "rate": 4.0,
+        "type": {
+            "value": "store",
+            "text": "小说"
+        }
+    },
+    {
+        "_id": "5f086ac41f4e4e05a0004013",
+        "img": "http://img3m5.ddimg.cn/36/30/25335225-1_l_12.jpg",
+        "price": 146.0,
+        "rate": 4.5,
+        "author": "【英】杰奎琳·莫",
+        "name": "千万不要玩穿越系列",
+        "type": {
+            "value": "store",
+            "text": "小说"
+        }
+    },
+    {
+        "_id": "5f086adc1f4e4e05a0004014",
+        "name": "宫西达也超级绘本",
+        "author": "[日]宫西达也",
+        "price": 139.0,
+        "rate": 4.0,
+        "img": "http://img3m2.ddimg.cn/49/27/26912902-1_l_3.jpg",
+        "type": {
+            "value": "store",
+            "text": "小说"
+        }
+    }
+]

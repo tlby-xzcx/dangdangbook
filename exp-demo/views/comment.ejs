@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>comment</title>
+    <%- include common %>
+    <style>
+        body {
+            padding-top: 70px;
+        }
+    </style>
+</head>
+
+<body>
+    <%- include('head',{title:'movie'})%>
+    <div class="container-fluid container">
+        <div class="row">
+            <div class="col-md-6">
+                <h4 class="text-success text-center">电影详情</h4>
+                <div class="thumbnail">
+                    <img src="<%- result.images.large.replace(/img7/,'img3') %>" title="<%- result.title %>"
+                        style="display: block; width: 252px;height: 362px;">
+                    <div class="caption">
+                        <h4 class="text-primary pull-right"><%- result.year %></h4>
+                        <h4 class="text-primary"><%- result.title %></h4>
+                        <p class="text-danger">评分：<%- result.rating.average %></p>
+                        <p class="text-info">导演：<%- result.directors[0].name %></p>
+                        <p class="text-success">分类：<%- result.genres %></p>
+                        <p class="text-success">主演：<%- result.casts[0].name %></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <h4 class="text-primary">添加评论</h4>
+                <form action="submit?mid=<%- result.id %>" method="post">
+                    <div class="form-group">
+                        <label for="comment_title">Comment title</label>
+                        <input type="text" name="title" class="form-control" id="comment_title" placeholder="请输入评论标题">
+                    </div>
+                    <div class="form-group">
+                        <label for="comment_content">Comment content</label>
+                        <textarea name="content" id="content" class="form-control" cols="30" rows="10"
+                            placeholder="请输入评论内容..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-success" onclick="clear()">Submit</button>
+                    <button type="button" class="btn btn-success"
+                        onclick="location.href='/comment/commentlist?mid=<%- result.id%>'">查看评论</button>
+                    <button type="button" class="btn btn-success"
+                        onclick="location.href='/comment/allcomment'">评论管理</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script>
+        function clear() {
+            $('#comment_title').val('');
+            $('#content').val('');
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home</title>
+    <%- include common %>
+    <style>
+        body {
+            padding-top: 70px;
+        }
+    </style>
+</head>
+
+<body>
+    <%- include('head',{title:'home'})%>
+    <div>
+        <% if(username){ %>
+        <h4>欢迎你，<%- username%></h4>
+        <button class="btn btn-danger" onclick="location.href='/loginout'">注销</button>
+        <button class="btn btn-info" onclick="location.href='/movie'">电影主页</button>
+        <%}else{%>
+        <h4>你还没有登录，请马上登录</h4>
+        <div>
+            <button class="btn btn-primary" onclick="location.href='/login'">登录</button>
+            <button class="btn btn-info" onclick="location.href='/register'">注册</button>
+        </div>
+        <%}%>
+        
+    </div>
+    <%- include footer%>
+</body>
+
+</html>

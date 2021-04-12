@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>movie</title>
+    <%- include common %>
+    <style>
+        body {
+            padding-top: 70px;
+        }
+    </style>
+</head>
+
+<body>
+    <%- include('head',{title:'movie'})%>
+    <div class="container-fluid container">
+        <div class="row container" style=" display: flex;">
+            <div class="form-group" style="display: flex;">
+                <input type="text" id="keyword" class="form-control" placeholder="keyword">
+                <button class="btn btn-success" onclick="search()">Search</button>
+            </div>
+            <div class="col-md-4">
+                <button class="btn btn-primary" onclick="location.href='/movie?year=1'">年份升序</button>
+                <button class="btn btn-info" onclick="location.href='/movie?year=-1'">年份降序</button>
+                <button class="btn btn-primary" onclick="location.href='/movie?rating.average=1'">评分升序</button>
+                <button class="btn btn-info" onclick="location.href='/movie?rating.average=-1'">评分降序</button>
+            </div>
+        </div>
+        <div class="row">
+            <h2 class="text-primary">电影列表</h2>
+            <% result.forEach((value,index)=>{ %>
+            <div class="col-md-3 col-sm-3 col-lg-3">
+                <div class="thumbnail">
+                    <img src="<%- value.images.large.replace(/img7/,'img3') %>" title="<%- value.title %>"
+                        style="display: block; width: 252px;height: 362px;">
+                    <div class="caption">
+                        <a href="/comment/index?mid=<%- value.id %>">
+                            <h4 class="text-primary pull-right"><%- value.year %></h4>
+                            <h4 class="text-primary"><%- value.title %></h4>
+                            <p class="text-danger">评分：<%- value.rating.average %></p>
+                            <p class="text-info">导演：<%- value.directors[0].name %></p>
+                            <p class="text-success">分类：<%- value.genres %></p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <% }) %>
+        </div>
+    </div>
+    <script>
+        function search() {
+            location.href = `/movie?keyword=${$('#keyword').val()}`;
+        }
+    </script>
+</body>
+
+</html>

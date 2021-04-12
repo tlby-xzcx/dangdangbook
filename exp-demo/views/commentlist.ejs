@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>comment-list</title>
+    <%- include common %>
+    <style>
+        body {
+            padding-top: 70px;
+        }
+    </style>
+</head>
+
+<body>
+    <%- include('head',{title:'movie'})%>
+    <!-- 用户名，评论内容，评论时间， -->
+    <div class="container-fluid container">
+        <%if(result.length>0){%>
+        <h2 class="text-success">评论列表--<%- result[0].mtitle %></h2>
+        <%result.forEach((value,index)=>{%>
+        <div class="row">
+            <div class="col-md-6">用户名:<%- value.username %></div>
+            <div class="col-md-6">评论时间:<%- value.time %></div>
+        </div>
+        <div class="row">
+            <div class="thumbnail">
+                <div class="caption">
+                    <h5><%- value.content %></h5>
+                </div>
+            </div>
+        </div>
+        <% })%>
+        <%}else{%>
+        <p>还没有人评论哦，快来抢占第一位...虚位以待</p>
+        <%}%>
+
+
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>评论管理</title>
+    <%- include common %>
+        <style>
+            body {
+                padding-top: 70px;
+            }
+        </style>
+</head>
+
+<body>
+    <%- include('head',{title:'movie'})%>
+        <div class="container-fluid container">
+            <div class="row">
+                <h3 class="text-success">评论管理</h3>
+                <div class="form-group col-md-3">
+                    <select onchange="setPageSize()" class="form-control" id="selectcount">
+                        <option value="">请选择每页显示的条数</option>
+                        <option value="4" <%- pageSize==4? 'selected' :'' %>>每页4条</option>
+                        <option value="8" <%- pageSize==8? 'selected' :'' %>>每页8条</option>
+                        <option value="10" <%- pageSize==10? 'selected' :'' %>>每页10条</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <table class="table table-hover table-bordered">
+                        <caption class="h4 text-info">评论列表--<%- allcom[0].username %>
+                        </caption>
+                        <tr class="text-primary text-center">
+                            <td>序号</td>
+                            <td class="col-md-2">电影名称</td>
+                            <td>电影封面</td>
+                            <td class="col-md-1">评论标题</td>
+                            <td class="clo-md-3">评论内容</td>
+                            <td>评论时间</td>
+                            <td>操作1</td>
+                            <td>操作2</td>
+                        </tr>
+                        <%if(allcom.length>0){%>
+                            <%allcom.forEach((value,index)=>{%>
+                                <tr class="text-center">
+                                    <td>
+                                        <%- index+1 %>
+                                    </td>
+                                    <td>
+                                        <%- value.mtitle %>
+                                    </td>
+                                    <td><img src="<%-value.mimg&&(value.mimg.replace(/img7/,'img3')) %>"
+                                            style="width: 80px;height: 80px;"></td>
+                                    <td>
+                                        <%- value.title %>
+                                    </td>
+                                    <td>
+                                        <%- value.content %>
+                                    </td>
+                                    <td>
+                                        <%- value.time %>
+                                    </td>
+                                    <td>
+                                        <button class="btn btn-danger" data-toggle="modal" data-target="#delbox"
+                                            onclick="setId('<%-value._id%>')">删除</button>
+                                    </td>
+                                    <td>
+                                        <button class="btn btn-primary" data-toggle="modal" data-target="#updatebox"
+                                            data-item='<%- JSON.stringify(value) %>' onclick="getItem(this)">修改</button>
+                                    </td>
+                                </tr>
+                                <%})%>
+                                    <%}%>
+                                        <tr>
+                                            <td colspan="8">
+                                                <nav aria-label="Page navigation" class="text-center">
+                                                    <ul class="pagination">
+                                                        <li class="<%- pageNow-1<1?'disabled':'' %>">
+                                                            <a href="/comment/allcomment?pageNow=<%- pageNow-1 %>"
+                                                                aria-label="Previous">
+                                                                <span aria-hidden="true">&laquo;</span>
+                                                            </a>
+                                                        </li>
+                                                        <li class="<%- pageNow-2<1?'hide':'' %>"><a
+                                                                href="/comment/allcomment?pageNow=<%- pageNow-2 %>">
+                                                                <%- pageNow-2 %>
+                                                            </a></li>
+                                                        <li class="<%- pageNow-1<1?'hide':'' %>"><a
+                                                                href="/comment/allcomment?pageNow=<%- pageNow-1 %>">
+                                                                <%- pageNow-1 %>
+                                                            </a></li>
+                                                        <li class="active"><a
+                                                                href="/comment/allcomment?pageNow=<%- pageNow %>">
+                                                                <%- pageNow %>
+                                                            </a>
+                                                        </li>
+                                                        <li class="<%- pageNow+1>totalPage?'hide':'' %>"><a
+                                                                href="/comment/allcomment?pageNow=<%- pageNow+1 %>">
+                                                                <%- pageNow+1 %>
+                                                            </a>
+                                                        <li class="<%- pageNow+2>totalPage?'hide':'' %>"><a
+                                                                href="/comment/allcomment?pageNow=<%- pageNow+2 %>">
+                                                                <%- pageNow+2 %>
+                                                            </a>
+                                                        <li class="<%- pageNow+1>totalPage?'disabled':'' %>">
+                                                            <a href="/comment/allcomment?pageNow=<%- pageNow+1 %>"
+                                                                aria-label="Next">
+                                                                <span aria-hidden="true">&raquo;</span>
+                                                            </a>
+                                                        </li>
+
+                                                    </ul>
+                                                    <li>第<%- pageNow %>页/共<%- totalPage %>页</li>
+                                                    <li>每页<%- pageSize %>条/共<%- total %>条</li>
+                                                </nav>
+
+                                            </td>
+                                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" tabindex="-1" role="dialog" id="delbox">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                                aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title">删除评论</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>**你确定要删除该条评论吗？&hellip;</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+                        <button type="button" class="btn btn-primary" onclick="deleteCommentById()">确定</button>
+                    </div>
+                </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+        </div><!-- /.modal -->
+        <div class="modal fade" tabindex="-1" role="dialog" id="updatebox">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                                aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title">修改评论</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="form-group">
+                            <label for="comment_title">Comment title</label>
+                            <input type="text" name="title" class="form-control" id="comment_title"
+                                placeholder="请输入评论标题">
+                        </div>
+                        <div class="form-group">
+                            <label for="comment_content">Comment content</label>
+                            <textarea name="content" id="content" class="form-control" cols="30" rows="10"
+                                placeholder="请输入评论内容..."></textarea>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+                        <button type="button" class="btn btn-primary" onclick="updateCommentById()">确定</button>
+                    </div>
+                </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+        </div><!-- /.modal -->
+        <script>
+            let id = null;
+            function setId(commentid) {
+                console.log(commentid);
+                id = commentid;
+            }
+            function deleteCommentById() {
+                console.log(id);
+                $.ajax({
+                    url: '/comment/delete',
+                    type: 'get',
+                    data: {
+                        _id: id
+                    }
+                }).done(data => {
+                    location.reload();
+                    $('#delbox').modal('hide');
+                })
+            }
+            let obj = {};
+            function getItem(that) {
+                // console.log(that);
+                obj = JSON.parse($(that).attr('data-item'))
+                // console.log(obj);
+                $('#comment_title').val(obj.title);
+                $('#content').val(obj.content);
+            }
+            function updateCommentById() {
+                $.ajax({
+                    url: '/comment/update',
+                    type: 'post',
+                    data: {
+                        title: $('#comment_title').val(),
+                        content: $('#content').val(),
+                        _id: obj._id
+                    }
+                }).done(da => {
+                    $('#updatebox').modal('hide');
+                    window.location.reload();
+                })
+            }
+
+            function setPageSize() {
+                let pageSize = $('#selectcount').val();
+                window.location.href = '/comment/allcomment?pageSize=' + pageSize;
+            }
+        </script>
+</body>
+
+</html>
